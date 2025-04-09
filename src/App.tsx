@@ -1,10 +1,11 @@
-import React from 'react'
+//import React from 'react'
+import { LocationBar } from './components/LocationBar/LocationBar.tsx' 
 
 function App() {
   return (
-    <div>
-      <h1>Hello, world!</h1>
-    </div>
+    <>
+      <h1> hello </h1>
+    </>
   )
 }
 
