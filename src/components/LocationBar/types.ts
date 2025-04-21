@@ -1,7 +1,7 @@
-import { TemperatureArrayProps } from "../../types";
+import { TemperatureObjProps } from "../../types";
 
 
 export type LocationBarProps = {
   Location: string;
-  TemperatureArray: TemperatureArrayProps; 
+  TemperatureObj: TemperatureObjProps; 
 };

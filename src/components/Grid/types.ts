@@ -1,10 +1,10 @@
-import { TemperatureArrayProps } from "../../types";
+import { TemperatureObjProps } from "../../types";
 
 export type CardProps = {
     Location: string;
     Temperature: number;
     UV: number; 
-    TemperatureArray: TemperatureArrayProps; 
+    TemperatureObj: TemperatureObjProps; 
   };
 
   export type CardDataProps = {

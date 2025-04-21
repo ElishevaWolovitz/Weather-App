@@ -5,25 +5,23 @@ import { styles } from './styles';
 
 const useStyles = createUseStyles(styles);
 
-const Card = ({ Location, Temperature, UV, TemperatureArray }: CardProps) => {
+const Card = ({ Location, Temperature, UV, TemperatureObj }: CardProps) => {
   const classes = useStyles();
   return (
-        <>
           <div className={classes.card}>
             <img 
               className={classes.backgroundImage} 
-              src={TemperatureArray.backgroundImg[0]}
-              alt={TemperatureArray.backgroundImg[1]} 
+              src={TemperatureObj.backgroundImg.src}
+              alt={TemperatureObj.backgroundImg.alt} 
             />
             <div className={classes.cardTemp}>
               <h2>{Temperature}°C</h2>
               <h4>UV: {UV}</h4>
             </div>
             <div>
-              <LocationBar Location={Location} TemperatureArray={ TemperatureArray}/>
+              <LocationBar Location={Location} TemperatureObj={ TemperatureObj}/>
             </div>
           </div>  
-        </>
     )
 }
 

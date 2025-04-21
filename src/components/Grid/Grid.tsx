@@ -4,7 +4,7 @@ import { cardData } from './const.ts';
 import { CardDataProps } from './types.ts';
 import Card from '../Card/index.ts';
 import { map } from 'lodash/fp';
-import { getTemperatureArray } from "../../functions.ts";
+import { getTemperatureObj } from "../../functions.ts";
 
 const useStyles = createUseStyles(styles);
 
@@ -12,13 +12,13 @@ const Grid = () => {
     const classes = useStyles();
 
     const createCard = (cardData: CardDataProps) => {
-        const temperatureDetails = getTemperatureArray(cardData.Temperature);
+        const temperatureDetails = getTemperatureObj(cardData.Temperature);
         return (
             <Card 
             Location={cardData.Location}
             Temperature={cardData.Temperature}
             UV={cardData.UV}
-            TemperatureArray={temperatureDetails}
+            TemperatureObj={temperatureDetails}
             /> 
         )
     }

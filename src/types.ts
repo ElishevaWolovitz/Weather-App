@@ -1,6 +1,10 @@
-export type TemperatureArrayProps = {
+export type TemperatureObjProps = {
     min: number; 
     max: number; 
-    backgroundImg: [src: string, alt: string]
-    icon: [src: string, alt: string]
+    backgroundImg: ImageObjProps
+    icon: ImageObjProps
+}
+export type ImageObjProps = {
+    src: string; 
+    alt: string; 
 }
