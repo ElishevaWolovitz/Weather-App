@@ -1,9 +1,9 @@
-import {TemperatureDetailsObjProps} from './types.ts';
+import {TemperatureObjProps} from './types.ts';
 import {find} from 'lodash/fp';
 import {TemperatureDetailsArray} from './const.ts';
 
 
-export const getTemperatureObj = (temperatureVal: number): TemperatureDetailsObjProps | undefined => {
-    const TemperatureDetails = find((temperatureOption: TemperatureDetailsObjProps) => temperatureOption.min <= temperatureVal && temperatureOption.max >= temperatureVal)(TemperatureDetailsArray);
+export const getTemperatureObj = (temperatureVal: number): TemperatureObjProps | undefined => {
+    const TemperatureDetails = find((temperatureOption: TemperatureObjProps) => temperatureOption.min <= temperatureVal && temperatureOption.max >= temperatureVal)(TemperatureDetailsArray);
     return TemperatureDetails; 
 }

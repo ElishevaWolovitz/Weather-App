@@ -6,9 +6,9 @@ import FreezingIcon from './assests/weatherIcons/FreezingIcon.png';
 import ColdIcon from './assests/weatherIcons/ColdIcon.png';
 import NormalIcon from './assests/weatherIcons/NormalIcon.png';
 import HotIcon from './assests/weatherIcons/HotIcon.png';
-import { TemperatureDetailsObjProps } from "./types";
+import { TemperatureObjProps } from "./types";
 
-export const TemperatureDetailsFreezing: TemperatureDetailsObjProps = {
+export const TemperatureDetailsFreezing: TemperatureObjProps = {
     min: -Infinity, 
     max: 0, 
     backgroundImg: {
@@ -20,7 +20,7 @@ export const TemperatureDetailsFreezing: TemperatureDetailsObjProps = {
         alt: "snowflake icon"
     } 
 }
-export const TemperatureDetailsCold: TemperatureDetailsObjProps = {
+export const TemperatureDetailsCold: TemperatureObjProps = {
     min: 0, 
     max: 15, 
     backgroundImg: {
@@ -33,7 +33,7 @@ export const TemperatureDetailsCold: TemperatureDetailsObjProps = {
     } 
 }
 
-export const TemperatureDetailsNormal: TemperatureDetailsObjProps = {
+export const TemperatureDetailsNormal: TemperatureObjProps = {
     min: 15, 
     max: 30, 
     backgroundImg: {
@@ -45,7 +45,7 @@ export const TemperatureDetailsNormal: TemperatureDetailsObjProps = {
         alt: "sun icon"
     } 
 }
-export const TemperatureDetailsHot: TemperatureDetailsObjProps = {
+export const TemperatureDetailsHot: TemperatureObjProps = {
     min: 30,
     max: Infinity,
     backgroundImg: {
@@ -58,7 +58,7 @@ export const TemperatureDetailsHot: TemperatureDetailsObjProps = {
     }
 }
 
-export const TemperatureDetailsArray:TemperatureDetailsObjProps[] = [
+export const TemperatureDetailsArray:TemperatureObjProps[] = [
     TemperatureDetailsFreezing, 
     TemperatureDetailsCold, 
     TemperatureDetailsNormal, 
