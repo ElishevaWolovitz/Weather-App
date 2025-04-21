@@ -1,4 +1,4 @@
-import LocationBar from "../LocationBar/index.ts";
+import LocationBar from "../TextBar/index.ts";
 import { CardProps } from "./types"; 
 import { createUseStyles } from 'react-jss';
 import { styles } from './styles';

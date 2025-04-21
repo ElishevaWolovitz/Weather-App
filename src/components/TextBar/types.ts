@@ -1,7 +1,7 @@
 import { ImageObjProps } from "../../types";
 
 
-export type LocationBarProps = {
+export type TextBarProps = {
   Location: string;
   Icon: ImageObjProps; 
 };

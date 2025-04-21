@@ -1,5 +1,5 @@
 export const styles = {
-    locationBar: {
+    textBar: {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'flex-start', 
@@ -12,12 +12,12 @@ export const styles = {
       bottom: 0,
       left: 0,
     },
-    locationText: {
+    textBarText: {
       fontSize: '16px',
       fontWeight: 'bold',
       color: '#333',
     },
-    locationIcon: {
+    textBarIcon: {
       width: '24px',
       height: '24px',
     },
