@@ -58,7 +58,7 @@ export const TemperatureDetailsHot: TemperatureDetailsObjProps = {
     }
 }
 
-export const TemperatureDetailsArray = [
+export const TemperatureDetailsArray:TemperatureDetailsObjProps[] = [
     TemperatureDetailsFreezing, 
     TemperatureDetailsCold, 
     TemperatureDetailsNormal, 
