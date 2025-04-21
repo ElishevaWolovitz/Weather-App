@@ -5,6 +5,7 @@ import { CardDataProps } from './types.ts';
 import Card from '../Card/index.ts';
 import { map } from 'lodash/fp';
 import { getTemperatureObj } from "../../functions.ts";
+import { ImageObjProps } from '../../types.ts';
 
 const useStyles = createUseStyles(styles);
 
@@ -18,7 +19,7 @@ const Grid = () => {
             Location={cardData.Location}
             Temperature={cardData.Temperature}
             UV={cardData.UV}
-            TemperatureObj={temperatureDetails}
+            BackgroundImg={temperatureDetails?.backgroundImg}
             /> 
         )
     }
