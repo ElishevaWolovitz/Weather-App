@@ -4,12 +4,12 @@ import { styles } from './styles';
 
 const useStyles = createUseStyles(styles);
 
-const LocationBar = ({Location, TemperatureObj}: LocationBarProps) => {
+const LocationBar = ({Location, Icon}: LocationBarProps) => {
     const classes = useStyles();
     return (
       <div className={classes.locationBar}>
           <span className={classes.locationText}>{Location}</span>
-          <img className={classes.locationIcon} src={TemperatureObj.icon.src} alt={TemperatureObj.icon.alt} />
+          <img className={classes.locationIcon} src={Icon.src} alt={Icon.alt} />
       </div>
     );
   };
