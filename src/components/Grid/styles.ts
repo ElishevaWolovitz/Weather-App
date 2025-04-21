@@ -1,7 +1,6 @@
-const styles = {
+export const styles = {
     grid: {
         display: 'grid',
-        //gap: '16px',
         gridTemplateColums: '1fr',
         '@media (min-width: 768px)': {
             gridTemplateColumns:'1fr 1fr',
@@ -17,5 +16,3 @@ const styles = {
         borderRadius: '10px',
     }
 };
-  
-  export default styles;

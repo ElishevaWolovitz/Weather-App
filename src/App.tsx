@@ -1,11 +1,8 @@
-//import React from 'react'
-import { Grid } from './components/Grid/Grid.tsx' 
+import Grid from "./components/Grid"
 
 function App() {
   return (
-    <>
-    <Grid/> 
-    </>
+      <Grid/> 
   )
 }
 

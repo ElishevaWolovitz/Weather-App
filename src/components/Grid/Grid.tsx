@@ -1,37 +1,38 @@
-//import React from 'react'
-import { Card } from '../Card/Card.tsx'; 
 import { createUseStyles } from 'react-jss';
-import styles from './styles';
+import {styles} from './styles';
+import { cardData } from './const.ts';
+import { CardDataProps } from './types.ts';
+import Card from '../Card/index.ts';
+import { map } from 'lodash/fp';
+import { getTemperatureArray } from "../../functions.ts";
 
-
-// should these two consts be in this file?
 const useStyles = createUseStyles(styles);
-
-const cardData = [
-    { LocationCardProp: "Tel Aviv", TempCardProp: 25, UVCardProp: 8 },
-    { LocationCardProp: "Johannesburg", TempCardProp: 6, UVCardProp: 4 },
-    { LocationCardProp: "Antarctica", TempCardProp: -5, UVCardProp: 0 },
-    { LocationCardProp: "Texas", TempCardProp: 31, UVCardProp: 12 },
-  ];
-
 
 const Grid = () => {
     const classes = useStyles();
+
+    const createCard = (cardData: CardDataProps) => {
+        const temperatureDetails = getTemperatureArray(cardData.Temperature);
+        return (
+            <Card 
+            Location={cardData.Location}
+            Temperature={cardData.Temperature}
+            UV={cardData.UV}
+            TemperatureArray={temperatureDetails}
+            /> 
+        )
+    }
+    const cards = map(createCard)(cardData)
+    
     return (
         <>
             <div className={classes.gridHeader}>
                 <h1>Weather</h1>
             </div>
-            <div className={classes.grid}>
-                {cardData.map((card, index) => (
-                <Card
-                    key={index} 
-                    LocationCardProp={card.LocationCardProp}
-                    TempCardProp={card.TempCardProp}
-                    UVCardProp={card.UVCardProp}
-                />
-                ))}
+            <div className={classes.grid}> 
+                {cards} 
             </div>
+
         </>
     )
 }

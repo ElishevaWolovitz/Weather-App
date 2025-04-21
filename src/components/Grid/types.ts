@@ -6,3 +6,9 @@ export type CardProps = {
     UV: number; 
     TemperatureArray: TemperatureArrayProps; 
   };
+
+  export type CardDataProps = {
+    Location: string;
+    Temperature: number;
+    UV: number; 
+  }

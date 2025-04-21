@@ -1,18 +1,15 @@
-import  LocationBarProps from './types';
-import getTempIcon from './functions';
+import { LocationBarProps } from "./types";
 import { createUseStyles } from 'react-jss';
-import styles from './styles';
+import { styles } from './styles';
 
-// Q: should this go in a different file?
 const useStyles = createUseStyles(styles);
 
-const LocationBar = ({ LocationLocBarProp, TempLocBarProp }: LocationBarProps) => {
+const LocationBar = ({Location, TemperatureArray}: LocationBarProps) => {
     const classes = useStyles();
     return (
       <div className={classes.locationBar}>
-          <span className={classes.locationText}>{LocationLocBarProp}</span>
-          {/*Q: should i have created a const variable for the src and alt so the function is not called here? */}
-          <img className={classes.locationIcon} src={getTempIcon(TempLocBarProp)[0]} alt={getTempIcon(TempLocBarProp)[1]} />
+          <span className={classes.locationText}>{Location}</span>
+          <img className={classes.locationIcon} src={TemperatureArray.icon[0]} alt={TemperatureArray.icon[1]} />
       </div>
     );
   };

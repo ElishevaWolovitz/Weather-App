@@ -1,4 +1,4 @@
-const styles = {
+export const styles = {
     card: {
       display: 'flex',
       flexDirection: 'column',
@@ -12,10 +12,10 @@ const styles = {
       backgroundColor: '#f5f5f5',
       position: 'relative', 
       margin: '20px',
-      transition: 'transform 0.3s ease, box-shadow 0.3s ease', // Smooth transition for hover effects
+      transition: 'transform 0.3s ease, box-shadow 0.3s ease', 
       '&:hover': {
         transform: 'scale(1.05)',
-        boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)', // Add a stronger shadow on hover
+        boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)', 
       },
     },
     backgroundImage: {
@@ -28,8 +28,6 @@ const styles = {
       fontSize: '24px',
       fontWeight: 'bold',
       position: 'absolute',
-      zIndex: 2,
     },
   };
   
-  export default styles;

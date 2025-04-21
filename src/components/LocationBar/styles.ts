@@ -1,4 +1,4 @@
-const styles = {
+export const styles = {
     locationBar: {
       display: 'flex',
       alignItems: 'center',
@@ -23,4 +23,3 @@ const styles = {
     },
   };
   
-  export default styles;

@@ -1,6 +1,7 @@
-type LocationBarProps = {
-    LocationLocBarProp: string;
-    TempLocBarProp: number;
-  };
+import { TemperatureArrayProps } from "../../types";
 
-  export default  LocationBarProps; 
+
+export type LocationBarProps = {
+  Location: string;
+  TemperatureArray: TemperatureArrayProps; 
+};
