@@ -1,4 +1,3 @@
-import { ImageObjProps } from "../../types";
 
 export type CardProps = {
     location: string;
@@ -13,3 +12,14 @@ export type CardProps = {
     temperature: number;
     uv: number; 
   }
+
+  export type TemperatureObjProps = {
+    min: number; 
+    max: number; 
+    backgroundImg: ImageObjProps
+    icon: ImageObjProps
+}
+export type ImageObjProps = {
+    src: string; 
+    alt: string; 
+}
