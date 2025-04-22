@@ -9,8 +9,7 @@ const Card = ({ Location, Temperature, UV, BackgroundImg, Icon }: CardProps) => 
   const classes = useStyles();
   return (
           <div className={classes.card}>
-            <img 
-              className={classes.backgroundImage} 
+            <img className={classes.backgroundImage} 
               src={BackgroundImg.src}
               alt={BackgroundImg.alt} 
             />

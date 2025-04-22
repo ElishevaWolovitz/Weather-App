@@ -9,7 +9,10 @@ const TextBar = ({Location, Icon}: TextBarProps) => {
     return (
       <div className={classes.textBar}>
           <span className={classes.textBarText}>{Location}</span>
-          <img className={classes.textBarIcon} src={Icon.src} alt={Icon.alt} />
+          <img className={classes.textBarIcon} 
+            src={Icon.src} 
+            alt={Icon.alt} 
+          />
       </div>
     );
   };
