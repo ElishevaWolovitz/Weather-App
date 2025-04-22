@@ -1,24 +1,24 @@
 import LocationBar from "../TextBar/index.ts";
 import { CardProps } from "./types"; 
 import { createUseStyles } from 'react-jss';
-import { styles } from './styles';
+import { Styles } from './styles';
 
-const useStyles = createUseStyles(styles);
+const useStyles = createUseStyles(Styles);
 
-const Card = ({ Location, Temperature, UV, BackgroundImg, Icon }: CardProps) => {
+const Card = ({ location, temperature, uv, backgroundImg, icon }: CardProps) => {
   const classes = useStyles();
   return (
           <div className={classes.card}>
             <img className={classes.backgroundImage} 
-              src={BackgroundImg.src}
-              alt={BackgroundImg.alt} 
+              src={backgroundImg.src}
+              alt={backgroundImg.alt} 
             />
             <div className={classes.cardTemp}>
-              <h2>{Temperature}°C</h2>
-              <h4>UV: {UV}</h4>
+              <h2>{temperature}°C</h2>
+              <h4>UV: {uv}</h4>
             </div>
             <div>
-              <LocationBar Location={Location} Icon={ Icon }/>
+              <LocationBar location={location} icon={ icon }/>
             </div>
           </div>  
     )

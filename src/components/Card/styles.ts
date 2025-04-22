@@ -1,4 +1,4 @@
-export const styles = {
+export const Styles = {
     card: {
       display: 'flex',
       flexDirection: 'column',

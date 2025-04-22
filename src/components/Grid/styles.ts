@@ -1,4 +1,4 @@
-export const styles = {
+export const Styles = {
     grid: {
         display: 'grid',
         gridTemplateColums: '1fr',

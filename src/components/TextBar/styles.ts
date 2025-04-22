@@ -1,4 +1,4 @@
-export const styles = {
+export const Styles = {
     textBar: {
       display: 'flex',
       alignItems: 'center',

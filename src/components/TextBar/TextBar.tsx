@@ -1,17 +1,17 @@
 import { TextBarProps } from "./types";
 import { createUseStyles } from 'react-jss';
-import { styles } from './styles';
+import { Styles } from './styles';
 
-const useStyles = createUseStyles(styles);
+const useStyles = createUseStyles(Styles);
 
-const TextBar = ({Location, Icon}: TextBarProps) => {
+const TextBar = ({location, icon}: TextBarProps) => {
     const classes = useStyles();
     return (
       <div className={classes.textBar}>
-          <span className={classes.textBarText}>{Location}</span>
+          <span className={classes.textBarText}>{location}</span>
           <img className={classes.textBarIcon} 
-            src={Icon.src} 
-            alt={Icon.alt} 
+            src={icon.src} 
+            alt={icon.alt} 
           />
       </div>
     );

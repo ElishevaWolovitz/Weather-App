@@ -1,25 +1,25 @@
 import { createUseStyles } from 'react-jss';
-import {styles} from './styles';
+import {Styles} from './styles';
 import { cardData } from './const.ts';
 import { CardDataProps } from './types.ts';
 import Card from '../Card/index.ts';
 import { map } from 'lodash/fp';
 import { getTemperatureObj } from "../../functions.ts";
 
-const useStyles = createUseStyles(styles);
+const useStyles = createUseStyles(Styles);
 
 const Grid = () => {
     const classes = useStyles();
 
     const createCard = (cardData: CardDataProps) => {
-        const temperatureDetails = getTemperatureObj(cardData.Temperature);
+        const temperatureDetails = getTemperatureObj(cardData.temperature);
         return (
             <Card 
-            Location={cardData.Location}
-            Temperature={cardData.Temperature}
-            UV={cardData.UV}
-            BackgroundImg={temperatureDetails.backgroundImg}
-            Icon ={temperatureDetails.icon}
+            location={cardData.location}
+            temperature={cardData.temperature}
+            uv={cardData.uv}
+            backgroundImg={temperatureDetails.backgroundImg}
+            icon ={temperatureDetails.icon}
             /> 
         )
     }

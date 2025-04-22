@@ -1,15 +1,15 @@
 import { ImageObjProps } from "../../types";
 
 export type CardProps = {
-    Location: string;
-    Temperature: number;
-    UV: number; 
-    BackgroundImg: ImageObjProps; 
-    Icon: ImageObjProps;
+    location: string;
+    temperature: number;
+    uv: number; 
+    backgroundImg: ImageObjProps; 
+    icon: ImageObjProps;
   };
 
   export type CardDataProps = {
-    Location: string;
-    Temperature: number;
-    UV: number; 
+    location: string;
+    temperature: number;
+    uv: number; 
   }
