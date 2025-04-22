@@ -1,6 +1,6 @@
 import { createUseStyles } from 'react-jss';
 import {Styles} from './styles';
-import { cardData } from './const.ts';
+import { CardData } from './const.ts';
 import { CardDataProps } from './types.ts';
 import Card from '../Card/index.ts';
 import { map } from 'lodash/fp';
@@ -23,7 +23,7 @@ const Grid = () => {
             /> 
         )
     }
-    const cards = map(createCard)(cardData)
+    const cards = map(createCard)(CardData)
     
     return (
         <>
