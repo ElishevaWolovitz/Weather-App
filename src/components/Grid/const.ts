@@ -1,12 +1,13 @@
-import FreezingBGImg from "./assests/backgroundImages/FreezingBGImg.jpg";
-import ColdBGImg from "./assests/backgroundImages/ColdBGImg.jpg";
-import NormalBGImg from "./assests/backgroundImages/NormalBGImg.jpg";
-import HotBGImg from "./assests/backgroundImages/HotBGImg.jpg";
-import FreezingIcon from './assests/weatherIcons/FreezingIcon.png';
-import ColdIcon from './assests/weatherIcons/ColdIcon.png';
-import NormalIcon from './assests/weatherIcons/NormalIcon.png';
-import HotIcon from './assests/weatherIcons/HotIcon.png';
+import FreezingBGImg from "../../assests/backgroundImages/FreezingBGImg.jpg";
+import ColdBGImg from "../../assests/backgroundImages/ColdBGImg.jpg";
+import NormalBGImg from "../../assests/backgroundImages/NormalBGImg.jpg";
+import HotBGImg from "../../assests/backgroundImages/HotBGImg.jpg";
+import FreezingIcon from '../../assests/weatherIcons/FreezingIcon.png';
+import ColdIcon from '../../assests/weatherIcons/ColdIcon.png';
+import NormalIcon from '../../assests/weatherIcons/NormalIcon.png';
+import HotIcon from '../../assests/weatherIcons/HotIcon.png';
 import { TemperatureObjProps } from "./types";
+
 
 export const CardData = [
     { location: "Tel Aviv", temperature: 25, uv: 8 },
