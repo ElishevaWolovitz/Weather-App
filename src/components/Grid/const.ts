@@ -6,7 +6,7 @@ import FreezingIcon from '../../assests/weatherIcons/FreezingIcon.png';
 import ColdIcon from '../../assests/weatherIcons/ColdIcon.png';
 import NormalIcon from '../../assests/weatherIcons/NormalIcon.png';
 import HotIcon from '../../assests/weatherIcons/HotIcon.png';
-import { TemperatureObjProps } from "./types";
+import { TemperatureObjProps } from "../../types";
 
 
 export const CardData = [
