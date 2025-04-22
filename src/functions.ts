@@ -1,13 +1,15 @@
-import {TemperatureObjProps} from './types.ts';
-import {find} from 'lodash/fp';
-import {TemperatureDetailsArray} from './const.ts';
-import {TemperatureDetailsBlank} from './const.ts';
 
-
-export const getTemperatureObj = (temperatureVal: number): TemperatureObjProps => {
-    const TemperatureDetails = find((temperatureOption: TemperatureObjProps) => 
-        temperatureOption.min <= temperatureVal && temperatureOption.max >= temperatureVal)(TemperatureDetailsArray);
-    if(TemperatureDetails)
-        return TemperatureDetails;
-    return TemperatureDetailsBlank;
+ 
+export const findCompare = <T extends {min: number; max: number}>(compareVal: number, array: T[]): T | undefined => {
+    for (const element of array)
+    {
+        if (element.min <= compareVal && element.max >= compareVal)
+            return element;
+    } 
+}
+export const getObjInRange = <T extends {min: number; max:number}>(compareVal: number, objArray: T[], defaultObj: T): T => {
+    const objWithRange = findCompare(compareVal, objArray);
+    if(objWithRange)
+        return objWithRange;
+    return defaultObj;
 }
