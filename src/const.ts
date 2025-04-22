@@ -57,6 +57,12 @@ export const TemperatureDetailsHot: TemperatureObjProps = {
         alt: "thermometer icon"
     }
 }
+export const TemperatureDetailsBlank: TemperatureObjProps = {
+    min: 0,
+    max: 0,
+    backgroundImg: { src: "", alt: "blank background" },
+    icon: { src: "", alt: "blank icon" }
+}
 
 export const TemperatureDetailsArray:TemperatureObjProps[] = [
     TemperatureDetailsFreezing, 
