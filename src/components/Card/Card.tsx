@@ -1,4 +1,4 @@
-import LocationBar from "../TextBar/index.ts";
+import TextBar from "../TextBar/index.ts";
 import { CardProps } from "./types"; 
 import { createUseStyles } from 'react-jss';
 import { Styles } from './styles';
@@ -18,7 +18,7 @@ const Card = ({ location, temperature, uv, backgroundImg, icon }: CardProps) => 
               <h4>UV: {uv}</h4>
             </div>
             <div>
-              <LocationBar location={location} icon={ icon }/>
+              <TextBar location={location} icon={ icon }/>
             </div>
           </div>  
     )
